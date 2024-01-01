@@ -1,0 +1,69 @@
+/* small screens and laptop */
+@media screen and (max-width:1024) {
+    html{
+        font-size: 13px;
+    } 
+    .container{
+        margin-inline: 3rem;
+    }
+    .home-left{
+        flex-basis: 80%;
+    }
+    .cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/* tab ipad */
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 13px;
+    } 
+
+    .hide{
+        display: none;
+    }
+    .home-left{
+        flex-basis: 90%;
+    }
+    .home{
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(/F:\vs workspace\basic\frontend development\js projects\web page\images\)); */
+        padding: 2rem;
+    }
+    .home-left p{
+        color: var(--primary-white-color);
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hamb{
+        margin-top: 1rem;
+        display: inline-block;
+    }
+    
+}
+
+@media  screen and (min-width:450){
+    .html{
+        font-size: 10px;
+    }  
+    .home-left{
+        flex-basis: 90%;
+    }
+    .container{
+        margin-inline: 2rem;
+    }
+}
+
+/* mobali device */
+@media  screen and (min-width:320){
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .appartments-head h2{
+        font-size: 1.2rem; 
+    }
+}
